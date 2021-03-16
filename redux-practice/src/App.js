@@ -1,6 +1,7 @@
 import React from 'react'
 import '../src/components/Style.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { increase,  decrease } from './action/Action'
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
     <div className="App">
       <h1>REDUX</h1>
       <h3>Counter {counter}</h3>
+      <button>➕</button>
+      <button>➖</button>
     </div>
   );
 }
